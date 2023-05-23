@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Patrick+Hand+SC&display=swap');
+
+body {
+	font-size: 1.3rem;
+	font-family: 'Patrick Hand', cursive; 
+	
+background-color: rgba(229,229,247,0.1);
+background-image:  linear-gradient(rgba(68,76,247,0.1)
+ 2px, transparent 2px), linear-gradient(90deg, rgba(68,76,247, 0.1)
+ 2px, transparent 2px), linear-gradient(rgba(68,76,247,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(68,76,247,0.1)
+ 1px, rgba(229,229,247,0.1) 1px);
+background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+background-attachment: fixed;
+}
+
+h1, h2 {
+	font-family: 'Patrick Hand SC', cursive;
+}
+
+h1 {
+	font-size: 2.8rem;
+	
+}
+
+h1 > span {
+	color: #2f84c9;
+}
+
+h2 {
+	font-size: 2rem;
+	position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 3px;
+  width: 70%;
+  height: 10px;
+  transform: skew(-12deg) translateX(-2%);
+  background: rgba(165, 42, 42, 0.5);
+  z-index: -1;
+}
+
+article {
+	width: 80vw;
+	padding: 1em;
+	margin: 0 auto;
+	padding: 1em;
+	column-count: 3;
+	column-width: 350px;	
+	column-gap: 40px;
+}
+
+p, li {
+	text-align: justify;
+}
+
+aside {
+	font-size: 1.5rem;
+	float: left;
+	max-width: 200px;
+  margin: 20px 10% 10px 20px;
+  background: linear-gradient(#006666, #003333);
+  color: white;
+  border-radius: 10px;
+  border: thick solid brown;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+aside:nth-of-type(2) {
+  float: right;
+}
+
+img {
+	border-radius: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 10px 0 10px 0;
+}
+
+.pelota {
+	width: 35px;
+	height: 35px;
+    margin: 10px 10px 10px 0;
+}
+
+.items {
+ display: flex;
+}
+
+.titular {
+	width: 50px;
+	height: 50px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.titular:hover {
+  rotate: 30deg;
+}
+
+.pelota:hover {
+	rotate: 30deg;
+}
